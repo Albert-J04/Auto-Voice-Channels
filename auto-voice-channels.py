@@ -225,6 +225,7 @@ async def creation_loop(client):
 
 @loop(seconds=cfg.CONFIG['loop_interval'] * 2)
 async def deletion_loop(client):
+    return
 
     @utils.func_timer()
     async def check_empty(guild, settings):
